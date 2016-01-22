@@ -10,10 +10,11 @@ public class Name{
         m_initial = m_init;
     }
     
-    //Constructor, Implicit
+    // Constructor, Implicit
     public Name() {
     }
-
+    
+    // Setters
     public void setFirstName(String first_name) {
         this.first_name = first_name;
     }
@@ -22,10 +23,11 @@ public class Name{
         this.last_name = last_name;
     }
 
-    public void setMiddileInitial(String m_initial) {
+    public void setMiddleInitial(String m_initial) {
         this.m_initial = m_initial + ".";
     }
-
+    
+    // Getters
     public String getFirstName(){
         return first_name;
     }
@@ -34,7 +36,7 @@ public class Name{
         return last_name;
     }
 
-    public String getMiddidleInitial(){
+    public String getMiddleInitial(){
         return m_initial;
     }
 
@@ -45,21 +47,10 @@ public class Name{
     public String getReverseOrder() {
         return last_name + ", " + m_initial + " " + first_name;
     }
-
+    
+    // ToString Method
     public String toString() {
         return getNormalOrder();
     }
 
-    // Main Method
-    public static void main(String[] cl_args) {
-        Name person1 = new Name();
-        person1.setFirstName("Griffin");
-        person1.setMiddileInitial("X");
-        person1.setLastName("Kanke");
-        Name person2 = new Name("Michael", "J", "Leonard");
-        System.out.print("Person 1: ");
-        System.out.println(person1.getNormalOrder());
-        System.out.print("Person 2: ");
-        System.out.println(person2.getReverseOrder());
-    }
 }
