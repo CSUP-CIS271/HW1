@@ -1,0 +1,45 @@
+public class HW1a {
+  private String fName;
+  private String mName;
+  private String lName;
+
+
+public void TestNameclass(String firstName, String middleName, String lastName) {
+  this.fName = firstName;
+  this.mName = middleName;
+  this.lName = lastName;
+      
+}
+  public String getfName() {
+    return fName;
+  }
+  
+   public String getmName() {
+    return mName;
+  }
+   
+    public String getlName() {
+    return lName;
+  }
+    public void setfName (String firstName) {
+      fName = firstName;
+    }
+  
+  public void setmName (String middleName) {
+      mName = middleName;
+    }
+ 
+  public void setlName (String lastName) {
+      lName = lastName;
+    }
+  
+  public String getNormalOrder() {
+    return (fName + " " + mName + " " + lName);
+     }
+  public String getReverseOrder() {
+    return (lName + " " + mName + " " + fName);
+  }
+  public String toString() {
+    return (fName + " " + mName + " " + lName);
+  }
+ }
