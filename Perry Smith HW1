@@ -1,0 +1,26 @@
+/*
+* Perry Smith
+* Java 271 Professor Voss
+* 1/28/16
+* Class file with client file names. HW1
+*/
+public class HW1 {
+public static void main (String[] args) {
+TestNameclass n1 = new TestNameclass("Perry", "L", "Smith");
+TestNameclass n2 = new TestNameclass("Morgan", "A", "Hasan");
+System.out.print("Regular name #1 - ");
+System.out.println(n1.getNormalOrder());
+System.out.print("Regular name #2 - ");
+System.out.println(n2.getNormalOrder());
+System.out.print("Backwards name #1 - ");
+System.out.println(n1.getReverseOrder());
+System.out.print("Backwards name 2 - ");
+System.out.println(n2.getReverseOrder());
+System.out.print("toString - ");
+System.out.println(n1);
+System.out.print("Reset first name - ");
+n1.setfName("Jordan");
+System.out.println(n1.getfName());
+}
+}
+Enter file contents here
